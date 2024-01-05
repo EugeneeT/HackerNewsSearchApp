@@ -1,31 +1,50 @@
-Explanation:
-
-1. Imports:
-
-Import the necessary dependencies (useState, useEffect) from React.
-Import the UserInput and RenderData components from their respective files.
-Import the CSS file ('./App.css') for styling (if applicable).
 
 
-2. State Hooks:
+# Hacker News Search App
 
-Use the useState hook to create state variables (searchTerm and articles) and their corresponding update functions.
+A simple React application that allows users to search for articles on Hacker News using the Hacker News API.
 
+## Components
 
-3. Event Handlers:
+### 1. App.jsx
 
-onInputChange: Handles the input change event and updates the searchTerm state.
-onSearch: Handles the search button click event and calls the fetchArticles function.
+The main component that orchestrates the application. It manages the state for the search term and the fetched articles. The component structure includes:
 
+- **State:**
+  - `searchTerm`: The term entered by the user for searching Hacker News.
+  - `articles`: The list of articles fetched from the Hacker News API.
 
-4. Fetch Articles Function:
+- **Functions:**
+  - `onInputChange`: Handles the input change event to update the search term.
+  - `onSearch`: Handles the search button click event and triggers the fetch of articles.
+  - `fetchArticles`: Asynchronously fetches articles from the Hacker News API.
 
-fetchArticles: Uses the fetch API to make a GET request to the Hacker News API with the current searchTerm.
-Parses the response as JSON.
-Updates the articles state with the fetched data.
+- **Components:**
+  - `UserInput`: Renders the search input field and the search button.
+  - `RenderData`: Renders the list of articles based on the search results.
 
+### 2. UserInput.jsx
 
-5. Rendering:
+A reusable functional component responsible for rendering the search input field and the search button. It takes the following props:
 
-Returns JSX to render the main App component.
-Includes a header, the UserInput component, and the RenderData component.
+- `searchTerm`: The current search term.
+- `onSearch`: Callback function triggered on the search button click.
+- `onInputChange`: Callback function triggered on the input field change.
+
+### 3. RenderData.jsx
+
+Another reusable functional component responsible for rendering the list of articles based on the search results. It takes the following prop:
+
+- `articles`: An array of articles fetched from the Hacker News API.
+
+The component filters out articles with missing titles before rendering them in an unordered list (`ul`). Each list item (`li`) contains a link (`a`) to the article's URL, which opens in a new tab.
+
+## How to Run
+
+1. Clone the repository: `git clone https://github.com/your-username/hacker-news-search-app.git`
+2. Navigate to the project directory: `cd hacker-news-search-app`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+5. Open your browser and go to `http://localhost:3000` to view the app.
+
+Feel free to explore and modify the code to suit your needs!
