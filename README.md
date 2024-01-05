@@ -1,26 +1,13 @@
-
-<<<<<<< HEAD
-2. State Hooks:
-=======
-
 # Hacker News Search App
->>>>>>> refs/remotes/origin/main
 
 A simple React application that allows users to search for articles on Hacker News using the Hacker News API.
 
-<<<<<<< HEAD
-3. Event Handlers:
-=======
 ## Components
 
 ### 1. App.jsx
->>>>>>> refs/remotes/origin/main
 
 The main component that orchestrates the application. It manages the state for the search term and the fetched articles. The component structure includes:
 
-<<<<<<< HEAD
-4. Fetch Articles Function:
-=======
 - **State:**
   - `searchTerm`: The term entered by the user for searching Hacker News.
   - `articles`: The list of articles fetched from the Hacker News API.
@@ -29,19 +16,14 @@ The main component that orchestrates the application. It manages the state for t
   - `onInputChange`: Handles the input change event to update the search term.
   - `onSearch`: Handles the search button click event and triggers the fetch of articles.
   - `fetchArticles`: Asynchronously fetches articles from the Hacker News API.
->>>>>>> refs/remotes/origin/main
 
 - **Components:**
   - `UserInput`: Renders the search input field and the search button.
   - `RenderData`: Renders the list of articles based on the search results.
 
-<<<<<<< HEAD
-5. Rendering:
-=======
 ### 2. UserInput.jsx
 
 A reusable functional component responsible for rendering the search input field and the search button. It takes the following props:
->>>>>>> refs/remotes/origin/main
 
 - `searchTerm`: The current search term.
 - `onSearch`: Callback function triggered on the search button click.
