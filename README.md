@@ -9,10 +9,12 @@ A simple React application that allows users to search for articles on Hacker Ne
 The main component that orchestrates the application. It manages the state for the search term and the fetched articles. The component structure includes:
 
 - **State:**
+
   - `searchTerm`: The term entered by the user for searching Hacker News.
   - `articles`: The list of articles fetched from the Hacker News API.
 
 - **Functions:**
+
   - `onInputChange`: Handles the input change event to update the search term.
   - `onSearch`: Handles the search button click event and triggers the fetch of articles.
   - `fetchArticles`: Asynchronously fetches articles from the Hacker News API.
