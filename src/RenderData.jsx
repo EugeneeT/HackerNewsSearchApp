@@ -6,11 +6,11 @@ const RenderData = ({ articles }) => {
             <ul>
                 {articles.map((article) => (
                     article.title && (
-                    <li key={article.objectID}>
-                        <a href={article.url} target="_blank" rel="noopener noreferrer">
-                            {article.title}
-                        </a>
-                    </li>
+                        <li key={article.objectID}>
+                            <a href={article.url} target="_blank" rel="noopener noreferrer">
+                                {article.title}
+                            </a>
+                        </li>
                     )
                 ))}
             </ul>

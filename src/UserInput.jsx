@@ -1,12 +1,12 @@
 import React from "react";
 
-const UserInput = ({searchTerm, onSearch, onInputChange}) => {
+const UserInput = ({ searchTerm, onSearch, onInputChange }) => {
     return (
         <div>
             <input type="text"
-            placeholder="Search for some news!"
-            value={searchTerm}
-            onChange={onInputChange} />
+                placeholder="Search for some news!"
+                value={searchTerm}
+                onChange={onInputChange} />
             <button onClick={onSearch}>Search</button>
         </div>
     );
