@@ -1,12 +1,23 @@
-<<<<<<< HEAD
-# HackerNewsSearchApp
-=======
-# React + Vite
+Explanation:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Imports:
 
-Currently, two official plugins are available:
+Import the necessary dependencies (useState, useEffect) from React.
+Import the UserInput and RenderData components from their respective files.
+Import the CSS file ('./App.css') for styling (if applicable).
+State Hooks:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 16c231a (first init)
+Use the useState hook to create state variables (searchTerm and articles) and their corresponding update functions.
+Event Handlers:
+
+onInputChange: Handles the input change event and updates the searchTerm state.
+onSearch: Handles the search button click event and calls the fetchArticles function.
+Fetch Articles Function:
+
+fetchArticles: Uses the fetch API to make a GET request to the Hacker News API with the current searchTerm.
+Parses the response as JSON.
+Updates the articles state with the fetched data.
+Rendering:
+
+Returns JSX to render the main App component.
+Includes a header, the UserInput component, and the RenderData component.
